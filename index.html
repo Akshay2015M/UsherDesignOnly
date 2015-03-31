@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title></title>
+		
+		<link href="css/style2.css" type="text/css" rel="Stylesheet"/>	
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/jscript.js"></script>
+		<script type="text/javascript" src="js/cordova.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<form>
+			<div id="wrapper">
+				<div id="dvLoginParent">
+				<img id="imgcurt" src="img/curtain2.jpg" alt=""/>
+					<div id="dvLogin">
+						<table id="tblLogin">
+							<tr>
+								
+								<td>
+									<input type="text" id="txtUN" class="clstxt" value="Enter User Number">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" id="txtpwd" class="clstxt" value="Enter Pin Number">
+								</td>
+							</tr>
+							</table>
+								<input type="button" value="Login" id="btnLogin" class="clsbtns" onclick="subValidate();"/>
+								<input type="button" value="Close" id="btnClose" class="clsbtns" onclick="exitFromApp();"/>
+					</div>
+				</div>
+				<div id="dvBookingParent">
+					<span id="spnbk">Enter Booking Id Manually.</span><br/>
+					<input type="text" id="txtBookingId"/><input type="button" id="btnGo" value="Check" onclick="subValidateBoking()"/><br/>
+					<span id="spnor">OR</span><br/>
+					<input type="button" value="Scan Barcode" id="btnScan"/>
+					<div id="dvbarimg">
+						<img src="img/barcode.png"/>
+					</div>
+				</div>
+				<div id="dvSuccessParent">
+					<div id="dvStatus">Valid Entry</div>
+					<div id="dvAdmits">Admits : 4</div>
+					<div class="dvinfo">Booked : 24 Mar 2015</div>
+					<div class="dvinfo">Name : Akshay Mankar</div>
+					<div class="dvinfo">Phone : 8108754778</div>
+					<div class="dvinfo">Ref : 15571</div>
+					<div class="dvinfo">Source : POSBK</div>
+					
+					
+					<div id="dvtable">
+						<table id="tblstatus">
+							<tr>
+								<td class="ticDet">HUNTERRR</td>
+							</tr>
+							<tr>
+								<td class="ticDet">24 Mar 2015</td>
+							</tr>
+							<tr>
+								<td class="bkDet">Screen1</td>
+							</tr>
+							<tr>
+								<td class="bkDetSeats">B-18,B-17,B-16,B-15,B-18,B-17,B-16,B-15,B-18,B-17</td>
+							</tr>
+						</table>
+					</div>
+					<input type="button" id="ValidBack" value="Back"/>
+				</div>
+				<div id="dvInvalidBookParent">
+					<div id="dvCross">
+						<img src="img/crosslogo.png" alt="" id="imgCross"/>
+					</div>
+					<div id="dvInvld">This booking does not exists in the system.</div>
+					<input type="button" id="InvalidBack" value="Back"/>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
